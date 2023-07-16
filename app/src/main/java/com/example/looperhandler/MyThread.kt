@@ -16,8 +16,7 @@ internal class MyThread : Thread() {
 }
 
 internal class MyHandler : Handler() {
-
     override fun handleMessage(msg: Message) {
-        Log.d("happySDK", "${System.currentTimeMillis()}")
+        Log.d("happySDK", "My Thread : ${System.currentTimeMillis()}")
     }
 }
